@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <meta name="description" content="aplicação chamada Focus Time, com objetivo de aplicar a técnica de Pomodoro, aplicação feita em aula stage 5 rocketseat Explorer">
+    <title>FocusTimer</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
+   
+    <main>
+      <div id="time">
+        <span class="minutes">25</span><span>:</span><span class="seconds">00</span>
+      </div>
+      <div id="controls">
+        <button class="play">
+          <img src="./assets/play.svg" alt="play time">
+        </button>
+        <button class="pause hide">
+          <img src="./assets/pause.svg" alt="Pause time">
+        </button>
+        <button class="stop hide">
+          <img src="./assets/stop.svg" alt="Stop time">
+        </button>
+        <button class="set">
+          <img src="./assets/set.svg" alt="Set time">
+        </button>
+      </div>
+    </main>
+    <footer>
+      <button class="sound-on">
+        <img src="./assets/sound-on.svg" alt="som ativado clique para desativar">
+      </button>
+      <button class="sound-off hide">
+        <img src="./assets/sound-off.svg" alt="som desativado clique para ativa">
+        <assets>
+        <sound-off class="svg"></sound-off>
+      </button>
+    </footer>
+    <div id="perfil">
+      <a
+        href="https://github.com/fel1pe-r-s/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        
+        <lottie-player
+          src="https://lottie.host/cf75debb-e761-4d7c-823a-e78e3bfb99bc/OLFkgpuWce.json"
+          background="transparent"
+          speed="1"
+          style="width: 70px; height: 70px;"
+          loop
+          autoplay
+        ></lottie-player
+      ></a>
+      <strong>@fel1pe-r-s</strong>
+    </div>
   </body>
 </html>

@@ -1,11 +1,11 @@
 # Focus Timer
 
-A ideia agora é criar uma aplicação chamada Focus Time, com objetivo de aplicar a tecnica de pomodoro.
+A ideia agora é criar uma aplicação chamada Focus Time, com objetivo de aplicar a técnica de Pomodoro.
 
-Caracteristicas que aplicação tem
+Características que aplicação tem
 
 - Play, Pause, stop
-- Som de fundo sendo possivel ativa ou desativa
+- Som de fundo sendo possível ativa ou desativa
 
 ## Layout da aplicação
 
