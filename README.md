@@ -16,10 +16,10 @@ Aqui neste **[link](https://www.figma.com/file/jrp8xKSeooL8uwmXPUPrBI/Explorer-S
 ## Deploy
 
 Para Acessa o projeto<br>
-[![netlify](https://img.shields.io/badge/Deploy-000?style=for-the-badge&logo=netlify&logoColor=white)](https://FocusTimer.netlify.app)
+[![Netlify](https://img.shields.io/badge/Deploy-000?style=for-the-badge&logo=netlify&logoColor=white)](https://timepomodoro.netlify.app)
 
 ## Demonstração
 
-<img src='./img/animated.gif' alt="Tela de demostração" width="100%" height="100%"> <br>
+<img src='./assets/animated.gif' alt="Tela de demostração" width="100%" height="100%"> <br>
 
 - Aplicação feita em aula
