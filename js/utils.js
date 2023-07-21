@@ -8,6 +8,7 @@ import {
   minutesDisplay,
   secondsDisplay,
 } from "./element.js";
+
 let minutes = Number(minutesDisplay.textContent);
 let timerTimerOut;
 
@@ -29,6 +30,7 @@ export function handleTogglePlayPause() {
   bottonstop.classList.remove("hide");
   bottonset.classList.add("hide");
   clearTimeout(timerTimerOut);
+ 
 }
 export function handleToggleStopSet() {
   bottonstop.classList.toggle("hide");
