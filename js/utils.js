@@ -42,8 +42,10 @@ export function handleToggleSoundOnAndOff() {
   bottonSoundOff.classList.toggle("hide");
 }
 
-function updateTimeDisplay(minutes, seconds) {
-  minutesDisplay.textContent = String(minutes).padStart(2, "0");
+function updateTimeDisplay(newMinutes, seconds) {
+  newMinutes = newMinutes === undefined ? minutes : newMinutes;
+  seconds = seconds === undefined ? 0 : seconds;
+  minutesDisplay.textContent = String(newMinutes).padStart(2, "0");
   secondsDisplay.textContent = String(seconds).padStart(2, "0");
 }
 
@@ -52,16 +54,19 @@ function countdown() {
   timerTimerOut = setTimeout(function () {
     let seconds = Number(secondsDisplay.textContent);
     let minutes = Number(minutesDisplay.textContent);
+    let isFinished = minutes <= 0 && seconds <= 1;
+
+    updateTimeDisplay(minutes, 0);
+    if (isFinished) {
+      handleToggleStopSet();
+      updateTimeDisplay();
+      return;
+    }
     if (seconds <= 0) {
       seconds = 60;
       --minutes;
     }
     updateTimeDisplay(minutes, String(seconds - 1));
-
-    if (minutes <= 0 && seconds == 1) {
-      handleToggleStopSet();
-      return;
-    }
 
     countdown();
   }, 1000);
